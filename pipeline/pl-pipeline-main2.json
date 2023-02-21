@@ -1,0 +1,20 @@
+{
+	"name": "pl-pipeline-main2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"folder": {
+			"name": "21-02-2023"
+		},
+		"annotations": []
+	}
+}
