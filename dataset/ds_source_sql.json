@@ -1,0 +1,51 @@
+{
+	"name": "ds_source_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedsqldb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "PipelineConfigurationId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "continername",
+				"type": "varchar"
+			},
+			{
+				"name": "Srcfoldername",
+				"type": "varchar"
+			},
+			{
+				"name": "Srcfilename",
+				"type": "varchar"
+			},
+			{
+				"name": "Tgtschemaname",
+				"type": "varchar"
+			},
+			{
+				"name": "Tgttablename",
+				"type": "varchar"
+			},
+			{
+				"name": "IsActive",
+				"type": "bit"
+			},
+			{
+				"name": "LoadOrder",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "pipelineconfiguration"
+		}
+	}
+}
