@@ -1,0 +1,83 @@
+{
+	"name": "dss_adls_m102stgadls_productcatdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lnkS_adls_m102stgadls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SrcContainername": {
+				"type": "string"
+			},
+			"Srcfoldername": {
+				"type": "string"
+			},
+			"Srcfilename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Srcfilename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().Srcfoldername",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().SrcContainername",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
