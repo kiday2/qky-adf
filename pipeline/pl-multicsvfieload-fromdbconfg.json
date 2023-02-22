@@ -126,7 +126,7 @@
 											"type": "Expression"
 										},
 										"Tgtfilename": {
-											"value": "@item().Tgtfilename",
+											"value": "@concat(item().Tgtfilename,'1')",
 											"type": "Expression"
 										}
 									}
