@@ -115,7 +115,21 @@
 							"outputs": [
 								{
 									"referenceName": "dst_adls_target",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Tgtcontainername": {
+											"value": "@item().Tgtcontainername",
+											"type": "Expression"
+										},
+										"Tgtfoldername": {
+											"value": "@item().Tgtfoldername",
+											"type": "Expression"
+										},
+										"Tgtfilename": {
+											"value": "@item().Tgtfilename",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
