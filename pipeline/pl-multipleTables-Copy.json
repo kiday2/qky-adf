@@ -1,0 +1,9 @@
+{
+	"name": "pl-multipleTables-Copy",
+	"properties": {
+		"folder": {
+			"name": "PLsCopyMultipleTablesInBulk"
+		},
+		"annotations": []
+	}
+}
